@@ -6,30 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu." />
+  <meta name="keywords" content="GiardDesign | Nowoczesna aranżacja Twojego ogrodu.">
   <link rel="icon" href="/public/images/favicon.ico">
+
+  <!-- styles -->
   <link href="/dist/output.css" rel="stylesheet">
   <title>GiardDesign | Nowoczesna aranżacja Twojego ogrodu.</title>
 </head>
 
 <body>
-  <section id="nav">
-    <div class="navbar">
-      <div>
-        <img src="/public/images/logo.svg" alt="logo">
+  <!-- nav -->
+  <section id="nav" class="bg-white">
+    <nav class="sticky my-6">
+      <div class="flex justify-between px-12">
+        <div>
+          <img src="/public/images/logo.svg" alt="logo">
+        </div>
+
+        <div>
+          <ul class="flex gap-12">
+            <li class="flex">Oferta <img src="/public/images/nav-icon.svg" alt="dropdown menu icon" /> </li>
+            <li><a href="about">O firmie</a></li>
+            <li><a href="realizations">Realizacje</a></li>
+            <li><a href="contact">Kontakt</a></li>
+            <li><img src="/public/images/lupa.svg" alt="search icon" /></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>Oferta <img src="/public/images/nav-icon.svg" alt="dropdown menu icon" /> </li>
-          <li>O firmie</li>
-          <li>Realizacje</li>
-          <li>Kontakt</li>
-          <li><img src="/public/images/lupa.svg" alt="search icon" /></li>
-        </ul>
+    </nav>
+  </section>
+
+  <section id="intro" class="bg-beige">
+
+    <div class="grid grid-cols-2">
+
+      <!-- left -->
+      <div class="flex flex-col items-center justify-center gap-8">
+        <h2>Nowoczesna<br> aranżacja<br>
+          Twojego ogrodu</h2>
+        <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres
+          usług z indywidualnym podejściem do każdego projektu.</p>
+
+        <div class="buttons py-8">
+          <button>Skontaktuj się z nami</button>
+          <button>Zobacz nasze realizacje</button>
+        </div>
+
       </div>
+
+      <!-- right -->
+      <div class="">
+        <img src="/public/images/intro-image.jpg" class="w-full object-cover" alt="about image" />
+      </div>
+
     </div>
   </section>
 
-  <section id="intro">intro</section>
   <section id="offer">offer</section>
   <section id="about">about</section>
   <section id="realization">realization</section>
