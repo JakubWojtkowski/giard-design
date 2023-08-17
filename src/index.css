@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .offer-text {
+    width: 688px;
+  }
+
+  .wrapper {
+    max-width: 1326px;
+  }
+
+  .custom-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .custom-card {
+    width: 378px;
+    height: 370px;
+    border: none;
+    padding: 48px 40px;
+    border-radius: 28px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  }
+
+  .custom-card p:last-child {
+    border-bottom: 1px solid #1b5b31;
+  }
+}
