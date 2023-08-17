@@ -17,11 +17,16 @@ module.exports = {
       grey: "#F5F0EC",
       beige: "#DCC1AB",
       green: "#1B5B31",
+      greenHover: "#174f2b",
       black: "#111111",
+      font: "rgb(249, 249, 249)",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      regular: ["Inter", "sans-serif"],
+      medium: ["Montserrat", "sans-serif"],
+      extended: ["Bricolage Grotesque", "sans-serif"],
     },
     extend: {
       spacing: {
