@@ -106,7 +106,7 @@
         <!-- heading text -->
         <div class="flex flex-col pl-32">
           <span class="text-xs font-normal text-green">Oferta</span>
-          <h2 class="font-medium text-5xl mt-4">Działamy <em>kompleksowo</em></h2>
+          <h2 class="font-medium text-5xl mt-4">Działamy <em class="font-regular">kompleksowo</em></h2>
           <p class="text-base font-normal offer-text mt-8">Oferujemy kompletną obsługę inwestycji terenów zielonych.
             Projektujemy
             nowoczesne ogrody przydomowe oraz
@@ -185,7 +185,7 @@
         <!-- text -->
         <div class="flex flex-col justify-center pl-24 h-full w-1/2">
           <span class="text-xs font-normal text-grey pb-4">O firmie</span>
-          <h2 class="font-medium text-5xl mt-4 text-grey pb-10">Tworzymy<br> z <em>pasją</em></h2>
+          <h2 class="font-medium text-5xl mt-4 text-grey pb-10">Tworzymy<br> z <em class="font-regular">pasją</em></h2>
           <p class="about-text text-base font-normal mt-8 text-grey pb-16">Każdy projekt to nowe wyzwanie. Dlatego
             nasz
             zespół
@@ -195,8 +195,8 @@
             trybu życia.</p>
 
           <div
-            class="text-grey border w-48 h-12 rounded-3xl pt-3 pb-3.5 px-5.5 flex justify-center transition-all cursor-pointer">
-            <a href="#" class="flex items-center gap-2 ">Poznaj nas bliżej
+            class=" border text-grey w-48 h-12 rounded-3xl pt-3 pb-3.5 px-5.5 flex justify-center transition-all cursor-pointer hover:bg-grey hover:text-green hover:border-none">
+            <a href="#realizations" class="flex items-center gap-2">Poznaj nas bliżej
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
@@ -212,13 +212,13 @@
   </section>
 
   <!-- realization section -->
-  <section id="#realization" class="bg-beige">
+  <section id="#realizations" class="bg-beige">
     <div class="flex flex-col">
 
       <!-- text -->
       <div class=" flex flex-col items-start pt-28 pb-24 pl-40">
         <span class="text-xs font-normal text-green">Realizacje</span>
-        <h2 class="font-medium text-5xl pt-4">Nasze <em>projekty</em></h2>
+        <h2 class="font-medium text-5xl pt-4">Nasze <em class="font-regular">projekty</em></h2>
       </div>
 
       <!-- gallery -->
@@ -226,25 +226,71 @@
   </section>
 
   <!-- contact section -->
-  <section id="#contact" class="bg-white">
-    <div class="custom-container py-16">
-      <div class="bg-green py-32 px-28 grid grid-cols-2">
-        <div>
-          <span>
-            Zostańmy w kontakcie!<br>
-            Znajdziesz nas na <em>Instagramie.</em>
-          </span></div>
-        <div>
-          <span>Śledź nasze
-            najnowsze realizacje!</span>
-          <button type="button">Instagram</button>
+  <section id="#contact" class="bg-grey">
+    <div class="custom-container max-w-6xl m-auto">
+      <div class="py-16">
+        <div class="rounded-3xl bg-green py-32 px-28 flex items-end gap-16">
+          <!-- left -->
+          <div class="flex">
+            <span class="flex-shrink-0 w-144 text-grey font-medium font-normal text-4xl">
+              Zostańmy w kontakcie!<br>
+              Znajdziesz nas na <em class="font-regular">Instagramie.</em>
+            </span></div>
+
+          <!-- right -->
+          <div class="flex flex-col gap-6 w-40 h-28">
+            <span class="text-grey font-normal text-base">Śledź nasze
+              najnowsze realizacje!</span>
+            <button type="button"
+              class="w-32 h-11 border border-grey transition-all text-green bg-grey rounded-3xl pt-2.5 pb-3 px-6 hover:text-grey hover:border-grey hover:bg-green ">Instagram</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- footer section -->
-  <section id="#footer">footer</section>
+  <section id="#footer" class="bg-black">
+    <div class="footer-container">
+
+      <div class="flex justify-between items-center">
+        <img src="/public/images/logo-white.png" alt="logo GiardDesign">
+        <div class="flex justify-center items-center gap-6">
+          <p class="text-grey">Daj znać, co możemy dla Ciebie zrobić!</p>
+          <button type="button"
+            class="bg-green border-green border-2 text-grey w-52 h-12 rounded-3xl px-6 pt-3 pb-3.5 hover:bg-greenHover hover:border-greenHover">Skontaktuj
+            się z nami</button>
+        </div>
+      </div>
+
+      <div class="text-grey py-14">
+        <hr>
+      </div>
+
+      <div class="flex justify-between text-grey py-14">
+        <div>
+          <a href="#">Kontakt</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+        </div>
+
+        <div>
+          <a href="tel:+48000-000-000">000-000-000</a>
+          <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+        </div>
+      </div>
+
+      <div class="flex justify-between text-grey">
+        <p>Prawa zastrzeżone © 2022</p>
+        <div class="flex">
+          <p>made by</p>
+          <img src="/public/images/logo-full-light.svg" alt="logo full light" />
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 
 </html>
