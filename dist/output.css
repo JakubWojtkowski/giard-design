@@ -571,6 +571,11 @@ video {
   margin-right: 7rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -600,8 +605,20 @@ video {
   height: 3rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-44 {
   width: 11rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-52 {
@@ -616,8 +633,24 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-screen-sm {
   max-width: 480px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
 }
 
 .cursor-pointer {
@@ -634,10 +667,6 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-start {
@@ -658,10 +687,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-1 {
@@ -733,6 +758,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -758,6 +788,14 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -766,12 +804,24 @@ video {
   padding-bottom: 0.875rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-40 {
   padding-bottom: 10rem;
 }
 
+.pl-24 {
+  padding-left: 6rem;
+}
+
 .pl-32 {
   padding-left: 8rem;
+}
+
+.pr-16 {
+  padding-right: 4rem;
 }
 
 .pt-3 {
@@ -801,11 +851,6 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -842,23 +887,38 @@ video {
   color: rgb(27 91 49 / var(--tw-text-opacity));
 }
 
+.text-grey {
+  --tw-text-opacity: 1;
+  color: rgb(245 240 236 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.offer-text {
-  width: 688px;
-}
-
 .wrapper {
   max-width: 1326px;
+  margin: 0 auto;
 }
 
 .custom-container {
   display: flex;
   justify-content: center;
+}
+
+.intro-title {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.offer-text {
+  width: 688px;
+}
+
+.about-text {
+  width: 500px;
 }
 
 .custom-card {

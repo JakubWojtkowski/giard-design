@@ -3,17 +3,27 @@
 @tailwind utilities;
 
 @layer utilities {
-  .offer-text {
-    width: 688px;
-  }
-
   .wrapper {
     max-width: 1326px;
+    margin: 0 auto;
   }
 
   .custom-container {
     display: flex;
     justify-content: center;
+  }
+
+  .intro-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .offer-text {
+    width: 688px;
+  }
+
+  .about-text {
+    width: 500px;
   }
 
   .custom-card {
