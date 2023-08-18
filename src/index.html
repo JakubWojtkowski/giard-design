@@ -15,6 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Inter&family=Montserrat:wght@400;500&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- styles -->
   <link href="/dist/output.css" rel="stylesheet">
@@ -148,7 +149,6 @@
                   fill="#1B5B31" />
               </svg>
             </p>
-
           </div>
 
           <div class="custom-card cursor-pointer">
@@ -227,23 +227,22 @@
 
   <!-- contact section -->
   <section id="#contact" class="bg-grey">
-    <div class="custom-container max-w-6xl m-auto">
-      <div class="py-16">
-        <div class="rounded-3xl bg-green py-32 px-28 flex items-end gap-16">
-          <!-- left -->
-          <div class="flex">
-            <span class="flex-shrink-0 w-144 text-grey font-medium font-normal text-4xl">
-              Zostańmy w kontakcie!<br>
-              Znajdziesz nas na <em class="font-regular">Instagramie.</em>
-            </span></div>
+    <div class="custom-container py-16">
+      <div class="rounded-3xl bg-green py-32 px-28 flex items-end gap-16">
+        <!-- left -->
+        <div class="flex">
+          <span class="flex-shrink-0 w-144 text-grey font-medium font-normal text-4xl">
+            Zostańmy w kontakcie!<br>
+            Znajdziesz nas na <em class="font-regular">Instagramie.</em>
+          </span></div>
 
-          <!-- right -->
-          <div class="flex flex-col gap-6 w-40 h-28">
-            <span class="text-grey font-normal text-base">Śledź nasze
-              najnowsze realizacje!</span>
-            <button type="button"
-              class="w-32 h-11 border border-grey transition-all text-green bg-grey rounded-3xl pt-2.5 pb-3 px-6 hover:text-grey hover:border-grey hover:bg-green ">Instagram</button>
-          </div>
+        <!-- right -->
+        <div class="flex flex-col gap-6 w-40 h-28">
+          <span class="text-grey font-normal text-base">Śledź nasze
+            najnowsze realizacje!</span>
+          <button type="button"
+            class="flex items-center justify-center transition-all gap-1 w-32 h-11 border border-grey transition-all text-green bg-grey rounded-3xl pt-2.5 pb-3 px-6 hover:text-grey hover:border-grey hover:bg-green ">
+            <i class="fa-brands fa-instagram"></i> Instagram</button>
         </div>
       </div>
     </div>
@@ -251,46 +250,48 @@
 
   <!-- footer section -->
   <section id="#footer" class="bg-black">
-    <div class="footer-container">
-
-      <div class="flex justify-between items-center">
+    <div class="flex flex-col py-20 items-center items-stretch max-w-5xl mx-auto px-4">
+      <div class="flex md:flex-row gap-4 flex-col justify-between items-center">
         <img src="/public/images/logo-white.png" alt="logo GiardDesign">
-        <div class="flex justify-center items-center gap-6">
+        <div class="flex md:flex-row flex-col justify-center items-center gap-6 text-base">
           <p class="text-grey">Daj znać, co możemy dla Ciebie zrobić!</p>
           <button type="button"
-            class="bg-green border-green border-2 text-grey w-52 h-12 rounded-3xl px-6 pt-3 pb-3.5 hover:bg-greenHover hover:border-greenHover">Skontaktuj
+            class="text-center bg-green border-green border-2 text-grey w-56 h-12 rounded-3xl px-6 pt-3 pb-3.5 hover:bg-greenHover hover:border-greenHover">Skontaktuj
             się z nami</button>
         </div>
       </div>
 
-      <div class="text-grey py-14">
+      <div class="text-grey py-16">
         <hr>
       </div>
 
-      <div class="flex justify-between text-grey py-14">
-        <div>
+      <div class="pb-28 flex md:flex-row flex-col gap-4 items-center justify-between text-grey text-sm">
+        <div class="footer-menu flex gap-12">
           <a href="#">Kontakt</a>
           <a href="#">Instagram</a>
           <a href="#">Facebook</a>
           <a href="#">LinkedIn</a>
         </div>
 
-        <div>
+        <div class="footer-menu flex gap-12">
           <a href="tel:+48000-000-000">000-000-000</a>
           <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
         </div>
       </div>
 
-      <div class="flex justify-between text-grey">
-        <p>Prawa zastrzeżone © 2022</p>
-        <div class="flex">
+      <div class="flex md:flex-row flex-col items-center gap-4 justify-between text-grey">
+        <p>Prawa zastrzeżone © 2022 - 2023</p>
+        <div class="flex gap-4">
           <p>made by</p>
-          <img src="/public/images/logo-full-light.svg" alt="logo full light" />
+          <a href="https://adrespect.pl/" target="_blank"><img src="/public/images/logo-full-light.svg"
+              alt="logo full light" /></a>
         </div>
       </div>
 
     </div>
   </section>
+
+  <script src="https://kit.fontawesome.com/a4ec9618cd.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
