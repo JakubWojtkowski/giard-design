@@ -55,9 +55,10 @@
   <!-- intro section -->
   <section id="intro" class="bg-beige">
     <div class="custom-container">
-      <div class="pr-16 wrapper flex flex-col-reverse justify-center gap-16 mx-28 md:flex-row">
+      <div class=" wrapper flex flex-col-reverse items-center justify-center gap-16 mx-28 md:flex-row">
+
         <!-- left -->
-        <div class="flex flex-col items-start justify-center gap-11 mt-10">
+        <div class="w-full flex flex-col md:items-start items-center justify-center gap-11 mt-10 pl-6">
           <h2 class="font-medium md:text-left text-center intro-title">Nowoczesna<br> aranżacja<br>
             Twojego ogrodu</h2>
           <p class="max-w-screen-sm md:text-left text-center text-base font-normal">Marka GiardDesign to wieloletnie
@@ -67,7 +68,8 @@
             usług z indywidualnym podejściem do każdego projektu.</p>
 
           <!-- buttons -->
-          <div class="flex gap-9 items-center buttons py-7">
+          <div
+            class="flex xl:flex-row xl:items-center lg:flex-col md:flex-col md:items-start flex-col items-center justify-centers gap-9  buttons py-7">
             <div>
               <a href="#"
                 class="bg-green border-green border-2 text-font w-52 h-12 rounded-3xl px-6 pt-3 pb-3.5 hover:bg-greenHover hover:border-greenHover">Skontaktuj
@@ -89,13 +91,13 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- right -->
-      <div class="">
-        <img src="/public/images/intro-image.jpg" class="w-full object-cover" alt="about image" />
-      </div>
 
+        <!-- right -->
+        <div class="w-full h-full">
+          <img src="/public/images/intro-image.jpg" class="w-full object-cover" alt="about image" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -103,7 +105,7 @@
   <section id="#offer" class="bg-grey">
     <!-- container -->
     <div class="custom-container">
-      <div class="wrapper flex flex-col gap-24 pt-32 pb-40 mx-28">
+      <div class="flex flex-col gap-24 pt-32 pb-40 mx-28">
         <!-- heading text -->
         <div class="flex flex-col pl-32">
           <span class="text-xs font-normal text-green">Oferta</span>
@@ -116,7 +118,7 @@
         </div>
 
         <!-- cards -->
-        <div class="flex gap-16">
+        <div class="flex justify-between items-center gap-16 px-6">
 
           <div class="custom-card cursor-pointer">
             <img src="/public/images/projects-icon.png" alt="projects icon" />

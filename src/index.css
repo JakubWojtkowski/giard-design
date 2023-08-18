@@ -38,8 +38,7 @@
   }
 
   .custom-card {
-    width: 378px;
-    height: 370px;
+    flex: 1;
     border: none;
     padding: 48px 40px;
     border-radius: 28px;
