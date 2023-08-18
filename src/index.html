@@ -175,18 +175,21 @@
   <!-- about section -->
   <section id="#about" class="bg-green">
     <div class="custom-container">
-      <div class="flex items-center gap-16">
+      <div class="flex md:flex-row flex-col gap-16">
 
         <!-- image -->
-        <div class="h-full w-1/2">
-          <img class="object-cover w-full h-auto" src="/public/images/about-image.jpg" alt="about image" />
+        <div class="h-full md:w-1/2 w-full">
+          <img class="object-cover w-full h-full" src="/public/images/about-image.jpg" alt="about image" />
         </div>
 
         <!-- text -->
-        <div class="flex flex-col justify-center pl-24 h-full w-1/2">
+        <div
+          class="flex flex-col flex-wrap justify-center md:items-start items-center h-full md:w-1/2 md:py-20 lg:pl-24 p-8">
           <span class="text-xs font-normal text-grey pb-4">O firmie</span>
-          <h2 class="font-medium text-5xl mt-4 text-grey pb-10">Tworzymy<br> z <em class="font-regular">pasją</em></h2>
-          <p class="about-text text-base font-normal mt-8 text-grey pb-16">Każdy projekt to nowe wyzwanie. Dlatego
+          <h2 class="font-medium text-5xl mt-4 text-grey pb-10 md:text-left text-center">Tworzymy<br> z <em
+              class="font-regular">pasją</em></h2>
+          <p class="about-text text-base font-normal mt-8 text-grey pb-16 md:text-left text-center">Każdy projekt to
+            nowe wyzwanie. Dlatego
             nasz
             zespół
             tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja
@@ -194,6 +197,7 @@
             minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego
             trybu życia.</p>
 
+          <!-- button -->
           <div
             class=" border text-grey w-48 h-12 rounded-3xl pt-3 pb-3.5 px-5.5 flex justify-center transition-all cursor-pointer hover:bg-grey hover:text-green hover:border-none">
             <a href="#realizations" class="flex items-center gap-2">Poznaj nas bliżej
@@ -227,17 +231,19 @@
 
   <!-- contact section -->
   <section id="#contact" class="bg-grey">
-    <div class="custom-container py-16">
-      <div class="rounded-3xl bg-green py-32 px-28 flex items-end gap-16">
+    <div class="lex flex-col py-16 max-w-5xl mx-auto px-4">
+
+      <div class="rounded-3xl bg-green py-32 px-28 
+      flex lg:flex-row lg:items-end flex-col items-center gap-16">
         <!-- left -->
         <div class="flex">
-          <span class="flex-shrink-0 w-144 text-grey font-medium font-normal text-4xl">
+          <span class="flex-shrink-0 w-144 lg:text-left text-center text-grey font-medium font-normal text-4xl">
             Zostańmy w kontakcie!<br>
             Znajdziesz nas na <em class="font-regular">Instagramie.</em>
           </span></div>
 
         <!-- right -->
-        <div class="flex flex-col gap-6 w-40 h-28">
+        <div class="flex flex-col justify-center items-center gap-6 ">
           <span class="text-grey font-normal text-base">Śledź nasze
             najnowsze realizacje!</span>
           <button type="button"
@@ -245,6 +251,7 @@
             <i class="fa-brands fa-instagram"></i> Instagram</button>
         </div>
       </div>
+
     </div>
   </section>
 
