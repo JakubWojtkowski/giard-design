@@ -23,6 +23,11 @@
     transition: all 250ms;
   }
 
+  .nav-li > a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 250ms;
+  }
+
   .intro-title {
     font-size: 60px;
     line-height: 70px;
