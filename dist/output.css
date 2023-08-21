@@ -651,24 +651,12 @@ video {
   height: 3rem;
 }
 
-.h-36 {
-  height: 9rem;
+.h-48 {
+  height: 12rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-48 {
-  height: 12rem;
 }
 
 .w-28 {
@@ -1070,6 +1058,8 @@ video {
   overflow: hidden;
 }
 
+/* nav */
+
 /* dropdown menu */
 
 .dropdown li {
@@ -1135,7 +1125,7 @@ ul li:hover ul.dropdown {
   line-height: 70px;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 600px) {
   .intro-title {
     font-size: 60px;
     line-height: 70px;
