@@ -72,7 +72,7 @@
           <div
             class="flex xl:flex-row xl:items-center lg:flex-col md:flex-col md:items-start flex-col items-center justify-centers gap-9  buttons py-7">
             <div>
-              <a href="#"
+              <a href="#contact"
                 class="bg-green border-green border-2 text-font w-52 h-12 rounded-3xl px-6 pt-3 pb-3.5 hover:bg-greenHover hover:border-greenHover">Skontaktuj
                 się z
                 nami</a>
@@ -80,7 +80,7 @@
 
             <div
               class="text-green border w-64 h-12 rounded-3xl px-5.5 pt-3 pb-3.5 flex justify-center hover:text-font hover:bg-green  hover:border-green transition-all cursor-pointer">
-              <a href="#realization" class="flex items-center gap-2 ">Zobacz
+              <a href="#realizations" class="flex items-center gap-2 ">Zobacz
                 nasze
                 realizacje
                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@
   </section>
 
   <!-- offer section -->
-  <section id="#offer" class="bg-grey">
+  <section id="offer" class="bg-grey">
     <!-- container -->
     <div class="custom-container">
       <div class="flex flex-col gap-24 pt-32 pb-40 mx-28">
@@ -176,7 +176,7 @@
   </section>
 
   <!-- about section -->
-  <section id="#about" class="bg-green">
+  <section id="about" class="bg-green">
     <div class="custom-container">
       <div class="flex md:flex-row flex-col gap-16">
 
@@ -219,8 +219,9 @@
   </section>
 
   <!-- realization section -->
-  <section id="#realizations" class="bg-beige">
+  <section id="realizations" class="bg-beige">
     <div class="flex flex-col">
+
 
       <!-- text -->
       <div class="flex flex-col md:items-start items-center pt-28 pb-24 md:pl-40">
@@ -228,23 +229,41 @@
         <h2 class="font-medium text-5xl pt-4">Nasze <em class="font-regular">projekty</em></h2>
       </div>
 
-      <!-- gallery -->
-      <div class="">
-        <img class="" src="/public/images/gallery/Photo-1.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-2.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-3.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-4.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-5.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-6.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-7.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-8.png" alt="gallery photo">
-        <img class="" src="/public/images/gallery/Photo-9.png" alt="gallery photo">
+      <div class="relative">
+        <!-- gallery -->
+        <div class="gallery-container relative">
+          <img class="w-full" src="/public/images/gallery/Photo-1.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-2.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-3.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-4.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-5.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-6.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-7.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-8.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-9.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-12.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-10.png" alt="Realizations: gallery photo">
+          <img class="w-full" src="/public/images/gallery/Photo-11.png" alt="Realizations: gallery photo">
+        </div>
+
+        <div class="gallery-cover"></div>
+
+        <button type="button"
+          class="flex gap-2 items-center px-5 pt-3 pb-3.5 border w-32 h-12 rounded-3xl font-regular text-base absolute bottom-20 left-1/2 -translate-x-1/2 z-10">
+          Rozwiń
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <path
+              d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+              fill="#111111" />
+          </svg>
+        </button>
       </div>
+
     </div>
   </section>
 
   <!-- contact section -->
-  <section id="#contact" class="bg-grey">
+  <section id="contact" class="bg-grey">
     <div class="lex flex-col py-16 max-w-5xl mx-auto px-4">
 
       <div class="rounded-3xl bg-green py-32 px-28 
@@ -270,7 +289,7 @@
   </section>
 
   <!-- footer section -->
-  <section id="#footer" class="bg-black">
+  <section id="footer" class="bg-black">
     <div class="flex flex-col py-20 items-center items-stretch max-w-5xl mx-auto px-4">
       <div class="flex md:flex-row gap-4 flex-col justify-between items-center">
         <img src="/public/images/logo-white.png" alt="logo GiardDesign">
@@ -312,10 +331,13 @@
     </div>
   </section>
 
+
   <script src="https://kit.fontawesome.com/a4ec9618cd.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/macy/2.5.1/macy.min.js"
     integrity="sha512-/o/3HSUNsIEsxRpMb5LdGO+algy6JHTf3tMn2VpWKfVexrEAepEzsuJPA51tJVdC9kCHsN5+Z4GJ35pcldgsGw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="macy.config.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

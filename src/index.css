@@ -3,8 +3,28 @@
 @tailwind utilities;
 
 @layer utilities {
+  *,
   body {
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .gallery-container {
+    max-height: 750px;
+    max-height: 2000px;
+    overflow: hidden;
+  }
+
+  .gallery-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      360deg,
+      #dcc1ab 0%,
+      rgba(214, 183, 158, 0) 100%
+    );
+    inset: 0;
   }
 
   .wrapper {
