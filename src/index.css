@@ -9,6 +9,47 @@
     scroll-behavior: smooth;
   }
 
+  .wrapper {
+    max-width: 1326px;
+    margin: 0 auto;
+  }
+
+  .custom-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* dropdown menu */
+  .dropdown li {
+    padding: 7px 8px;
+  }
+
+  ul li:hover ul.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* offer */
+
+  .custom-card {
+    flex: 1;
+    border: none;
+    padding: 48px 40px;
+    border-radius: 28px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  }
+
+  .custom-card p:last-child {
+    border-bottom: 1px solid #1b5b31;
+  }
+
+  /* gallery */
+
   .gallery-container {
     max-height: 600px;
     overflow: hidden;
@@ -26,53 +67,42 @@
     inset: 0;
   }
 
-  .wrapper {
-    max-width: 1326px;
-    margin: 0 auto;
-  }
-
-  .custom-container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
+  /* text */
 
   .footer-menu > a:hover {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.5);
     transition: all 250ms;
   }
 
-  .nav-li > a:hover {
-    color: rgba(255, 255, 255, 0.7);
+  .li-link:hover {
+    color: rgba(0, 0, 0, 0.5);
     transition: all 250ms;
   }
 
   .intro-title {
-    font-size: 60px;
+    font-size: 48px;
     line-height: 70px;
   }
 
+  @media screen and (min-width: 768) {
+    .intro-title {
+      font-size: 60px;
+      line-height: 70px;
+    }
+  }
+
   .offer-text {
-    width: 688px;
+    max-width: 688px;
+    min-width: 300px;
+  }
+
+  .contact-text {
+    max-width: 600px;
+    min-width: 300px;
   }
 
   .about-text {
-    min-width: 350px;
+    min-width: 320px;
     max-width: 500px;
-  }
-
-  .custom-card {
-    flex: 1;
-    border: none;
-    padding: 48px 40px;
-    border-radius: 28px;
-    background: #fff;
-    display: grid;
-    grid-template-columns: 1fr;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  }
-
-  .custom-card p:last-child {
-    border-bottom: 1px solid #1b5b31;
   }
 }

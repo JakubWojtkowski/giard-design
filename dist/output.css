@@ -586,6 +586,10 @@ video {
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-28 {
   margin-left: 7rem;
   margin-right: 7rem;
@@ -599,6 +603,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .my-6 {
@@ -630,6 +639,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-11 {
   height: 2.75rem;
 }
@@ -638,12 +651,28 @@ video {
   height: 3rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .h-full {
   height: 100%;
 }
 
-.w-144 {
-  width: 36rem;
+.h-40 {
+  height: 10rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-32 {
@@ -678,12 +707,16 @@ video {
   max-width: 64rem;
 }
 
-.max-w-screen-sm {
-  max-width: 480px;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
-.flex-shrink-0 {
-  flex-shrink: 0;
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-screen-sm {
+  max-width: 480px;
 }
 
 .-translate-x-1\/2 {
@@ -779,6 +812,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -831,9 +868,14 @@ video {
   padding: 2rem;
 }
 
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -866,9 +908,9 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .py-7 {
@@ -908,12 +950,8 @@ video {
   padding-bottom: 10rem;
 }
 
-.pl-32 {
-  padding-left: 8rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
+.pl-0 {
+  padding-left: 0px;
 }
 
 .pt-2 {
@@ -1021,6 +1059,48 @@ video {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  max-width: 1326px;
+  margin: 0 auto;
+}
+
+.custom-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* dropdown menu */
+
+.dropdown li {
+  padding: 7px 8px;
+}
+
+ul li:hover ul.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* offer */
+
+.custom-card {
+  flex: 1;
+  border: none;
+  padding: 48px 40px;
+  border-radius: 28px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.custom-card p:last-child {
+  border-bottom: 1px solid #1b5b31;
+}
+
+/* gallery */
+
 .gallery-container {
   max-height: 600px;
   overflow: hidden;
@@ -1038,54 +1118,43 @@ video {
   inset: 0;
 }
 
-.wrapper {
-  max-width: 1326px;
-  margin: 0 auto;
-}
-
-.custom-container {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
+/* text */
 
 .footer-menu > a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   transition: all 250ms;
 }
 
-.nav-li > a:hover {
-  color: rgba(255, 255, 255, 0.7);
+.li-link:hover {
+  color: rgba(0, 0, 0, 0.5);
   transition: all 250ms;
 }
 
 .intro-title {
-  font-size: 60px;
+  font-size: 48px;
   line-height: 70px;
 }
 
+@media screen and (min-width: 768) {
+  .intro-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
 .offer-text {
-  width: 688px;
+  max-width: 688px;
+  min-width: 300px;
+}
+
+.contact-text {
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .about-text {
-  min-width: 350px;
+  min-width: 320px;
   max-width: 500px;
-}
-
-.custom-card {
-  flex: 1;
-  border: none;
-  padding: 48px 40px;
-  border-radius: 28px;
-  background: #fff;
-  display: grid;
-  grid-template-columns: 1fr;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-}
-
-.custom-card p:last-child {
-  border-bottom: 1px solid #1b5b31;
 }
 
 .hover\:border-none:hover {
@@ -1147,6 +1216,16 @@ video {
   color: rgb(245 240 236 / var(--tw-text-opacity));
 }
 
+@media (min-width: 480px) {
+  .sm\:gap-12 {
+    gap: 3rem;
+  }
+
+  .sm\:pl-6 {
+    padding-left: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:w-1\/2 {
     width: 50%;
@@ -1169,6 +1248,10 @@ video {
     padding-bottom: 5rem;
   }
 
+  .md\:pl-16 {
+    padding-left: 4rem;
+  }
+
   .md\:pl-40 {
     padding-left: 10rem;
   }
@@ -1187,12 +1270,30 @@ video {
     flex-direction: column;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-end {
     align-items: flex-end;
   }
 
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .lg\:pl-24 {
     padding-left: 6rem;
+  }
+
+  .lg\:pl-32 {
+    padding-left: 8rem;
   }
 
   .lg\:text-left {

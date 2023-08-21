@@ -25,7 +25,7 @@
 <body>
   <!-- nav section-->
   <section id="nav" class="bg-white h-12">
-    <div class="wrapper">
+    <div class="max-w-7xl mx-auto my-0">
       <nav class="sticky my-6 mx-3">
         <div class="flex px-6 py-0 items-center justify-between">
           <div>
@@ -34,16 +34,27 @@
 
           <div>
             <ul class="flex justify-end gap-12 font-normal items-center">
-              <li class="nav-li">
-                <button type="button" class="text-sm flex items-center gap-1">Oferta
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="nav-li relative">
+                <a href="#" class="li-link text-sm flex items-center gap-1">Oferta
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M2.13017 4.81427C1.95661 4.6407 1.95661 4.3593 2.13017 4.18573C2.28796 4.02794 2.53487 4.0136 2.70887 4.1427L2.75871 4.18573L6 7.42681L9.24129 4.18573C9.39907 4.02794 9.64599 4.0136 9.81998 4.1427L9.86983 4.18573C10.0276 4.34352 10.042 4.59043 9.91286 4.76442L9.86983 4.81427L6.31427 8.36983C6.15648 8.52761 5.90957 8.54196 5.73558 8.41286L5.68573 8.36983L2.13017 4.81427Z"
                       fill="#111111" />
-                  </svg></button></li>
-              <li class="nav-li"><a href="#about" class="text-sm">O firmie</a></li>
-              <li class="nav-li"><a href="#realizations" class="text-sm">Realizacje</a></li>
-              <li class="nav-li"><a href="#contact" class="text-sm">Kontakt</a></li>
+                  </svg>
+                </a>
+                <!-- dropdown menu -->
+                <ul class="dropdown hidden w-28 h-48 bg-white rounded-xl absolute z-50 pt-2">
+                  <li><a href="#" class="li-link text-sm">Ogród</a></li>
+                  <li><a href="#" class="li-link text-sm">Balkon</a></li>
+                  <li><a href="#" class="li-link text-sm">Rośliny</a></li>
+                  <li><a href="#" class="li-link text-sm">Sklep</a></li>
+
+
+                </ul>
+              </li>
+              <li class="nav-li"><a href="#about" class="li-link text-sm">O firmie</a></li>
+              <li class="nav-li"><a href="#realizations" class="li-link text-sm">Realizacje</a></li>
+              <li class="nav-li"><a href="#contact" class="li-link text-sm">Kontakt</a></li>
               <li class="nav-li"><button class="text-sm"><img src="/public/images/lupa.svg"
                     alt="search icon" /></button></li>
             </ul>
@@ -59,8 +70,8 @@
       <div class=" wrapper flex flex-col-reverse items-center justify-center gap-16 mx-28 md:flex-row">
 
         <!-- left -->
-        <div class="w-full flex flex-col md:items-start items-center justify-center gap-11 mt-10 pl-6">
-          <h2 class="font-medium md:text-left text-center intro-title">Nowoczesna<br> aranżacja<br>
+        <div class="w-full flex flex-col md:items-start items-center justify-center gap-11 mt-10 sm:pl-6 px-3">
+          <h2 class="intro-title font-medium md:text-left text-center intro-title">Nowoczesna<br> aranżacja<br>
             Twojego ogrodu</h2>
           <p class="max-w-screen-sm md:text-left text-center text-base font-normal">Marka GiardDesign to wieloletnie
             doświadczenie i wysoka
@@ -106,12 +117,13 @@
   <section id="offer" class="bg-grey">
     <!-- container -->
     <div class="custom-container">
-      <div class="flex flex-col gap-24 pt-32 pb-40 mx-28">
+      <div class="flex flex-col max-w-6xl gap-24 pt-32 pb-40 mx-28 px-6">
         <!-- heading text -->
-        <div class="flex flex-col pl-32">
+        <div class="flex flex-col md:items-start items-center md:text-left text-center lg:pl-32 md:pl-16 pl-0">
           <span class="text-xs font-normal text-green">Oferta</span>
           <h2 class="font-medium text-5xl mt-4">Działamy <em class="font-regular">kompleksowo</em></h2>
-          <p class="text-base font-normal offer-text mt-8">Oferujemy kompletną obsługę inwestycji terenów zielonych.
+          <p class="text-base font-normal offer-text mt-8">Oferujemy kompletną obsługę
+            inwestycji terenów zielonych.
             Projektujemy
             nowoczesne ogrody przydomowe oraz
             rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
@@ -119,7 +131,7 @@
         </div>
 
         <!-- cards -->
-        <div class="flex justify-between items-center gap-16 px-6">
+        <div class="flex lg:flex-row flex-col justify-between items-center gap-16">
 
           <div class="custom-card cursor-pointer">
             <img src="/public/images/projects-icon.png" alt="projects icon" />
@@ -222,11 +234,10 @@
   <section id="realizations" class="bg-beige">
     <div class="flex flex-col">
 
-
       <!-- text -->
       <div class="flex flex-col md:items-start items-center pt-28 pb-24 md:pl-40">
         <span class="text-xs font-normal text-green">Realizacje</span>
-        <h2 class="font-medium text-5xl pt-4">Nasze <em class="font-regular">projekty</em></h2>
+        <h2 class="font-medium text-5xl text-center pt-4">Nasze <em class="font-regular">projekty</em></h2>
       </div>
 
       <div class="relative">
@@ -267,21 +278,21 @@
   <section id="contact" class="bg-grey">
     <div class="lex flex-col py-16 max-w-5xl mx-auto px-4">
 
-      <div class="rounded-3xl bg-green py-32 px-28 
-      flex lg:flex-row lg:items-end flex-col items-center gap-16">
+      <div class="rounded-3xl bg-green lg:py-32 lg:px-28 py-28 px-20 
+      flex lg:flex-row lg:items-end flex-col items-center justify-center gap-16">
         <!-- left -->
         <div class="flex">
-          <span class="flex-shrink-0 w-144 lg:text-left text-center text-grey font-medium font-normal text-4xl">
-            Zostańmy w kontakcie!<br>
+          <span class="contact-text lg:text-left text-center text-grey font-medium font-normal text-4xl">
+            Zostańmy w kontakcie!
             Znajdziesz nas na <em class="font-regular">Instagramie.</em>
           </span></div>
 
         <!-- right -->
-        <div class="flex flex-col justify-center items-center gap-6 ">
-          <span class="text-grey font-normal text-base">Śledź nasze
+        <div class="flex flex-col lg:items-start justify-center items-center gap-6">
+          <span class="text-grey font-normal text-base lg:text-left text-center">Śledź nasze
             najnowsze realizacje!</span>
           <button type="button"
-            class="flex items-center justify-center transition-all gap-1 w-32 h-11 border border-grey transition-all text-green bg-grey rounded-3xl pt-2.5 pb-3 px-6 hover:text-grey hover:border-grey hover:bg-green ">
+            class="flex items-center justify-center gap-1 w-32 h-11 border border-grey transition-all text-green bg-grey rounded-3xl pt-2.5 pb-3 px-6 hover:text-grey hover:border-grey hover:bg-green ">
             <i class="fa-brands fa-instagram"></i> Instagram</button>
         </div>
       </div>
@@ -291,7 +302,8 @@
 
   <!-- footer section -->
   <section id="footer" class="bg-black">
-    <div class="flex flex-col py-20 items-center items-stretch max-w-5xl mx-auto px-4">
+    <div class="flex flex-col py-20 items-stretch  max-w-5xl mx-auto px-4">
+
       <div class="flex md:flex-row gap-4 flex-col justify-between items-center">
         <img src="/public/images/logo-white.png" alt="logo GiardDesign">
         <div class="flex md:flex-row flex-col justify-center items-center gap-6 text-base">
@@ -307,14 +319,14 @@
       </div>
 
       <div class="pb-28 flex md:flex-row flex-col gap-4 items-center justify-between text-grey text-sm">
-        <div class="footer-menu flex gap-12">
-          <a href="#">Kontakt</a>
+        <div class="footer-menu flex sm:gap-12 gap-4">
+          <a href="#contact">Kontakt</a>
           <a href="#">Instagram</a>
           <a href="#">Facebook</a>
           <a href="#">LinkedIn</a>
         </div>
 
-        <div class="footer-menu flex gap-12">
+        <div class="footer-menu flex sm:gap-12 gap-4">
           <a href="tel:+48000-000-000">000-000-000</a>
           <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
         </div>
