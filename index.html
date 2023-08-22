@@ -32,7 +32,7 @@
 
 <body>
   <!-- nav section-->
-  <section id="nav" class="bg-white h-12">
+  <section id="nav" class="sticky bg-white h-[72px] z-20">
     <div class="max-w-7xl mx-auto my-0">
       <nav class=" flex px-6 py-0 items-center justify-between my-6 relative">
         <div>
@@ -40,7 +40,7 @@
         </div>
 
         <div
-          class="nav-links absolute pr-6 hidden md:top-0 md:right-0 md:min-h-fit min-h-[44vh] top-[0vh] right-[0vh] bg-white md:w-auto w-full">
+          class="nav-links absolute pr-6 md:top-0 md:right-0 md:min-h-fit min-h-[44vh] top-[-100vh] right-[0vh] bg-white md:w-auto w-full">
           <ul
             class="flex md:flex-row flex-col md:justify-end justify-center md:gap-12 gap-8 md:py-0 py-4 md:pl-0 pl-4 font-normal md:items-center items-start">
             <li class="nav-li relative">
@@ -52,24 +52,26 @@
                 </svg>
               </a>
               <!-- dropdown menu -->
-              <ul class="dropdown hidden w-28 h-48 bg-white rounded-xl absolute z-50 pt-2">
+              <ul class="dropdown hidden w-28 h-[12.5rem] bg-white rounded-xl absolute z-50 pt-4">
                 <li><a href="#" class="li-link text-sm">Ogród</a></li>
                 <li><a href="#" class="li-link text-sm">Balkon</a></li>
                 <li><a href="#" class="li-link text-sm">Rośliny</a></li>
                 <li><a href="#" class="li-link text-sm">Sklep</a></li>
               </ul>
             </li>
+
             <li class="nav-li"><a href="#about" class="li-link text-sm">O firmie</a></li>
             <li class="nav-li"><a href="#realizations" class="li-link text-sm">Realizacje</a></li>
             <li class="nav-li"><a href="#contact" class="li-link text-sm">Kontakt</a></li>
 
             <li class="nav-li relative flex gap-4">
               <a href="#" class="search-btn">
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search text-lg"></i>
               </a>
             </li>
           </ul>
         </div>
+        <!-- burgermenu button -->
         <div class="md:hidden z-10">
           <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
         </div>
@@ -83,7 +85,7 @@
       <div class=" wrapper flex flex-col-reverse items-center justify-center gap-16 mx-28 md:flex-row">
 
         <!-- left -->
-        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+        <div data-aos="fade-up" data-aos-duration="1000"
           class="w-full flex flex-col md:items-start items-center justify-center gap-11 mt-10 sm:pl-6 px-3">
           <h2 class="intro-title font-medium md:text-left text-center intro-title">Nowoczesna<br> aranżacja<br>
             Twojego ogrodu</h2>
@@ -132,7 +134,7 @@
     <div class="custom-container">
       <div class="flex flex-col max-w-6xl gap-24 pt-32 pb-40 mx-28 px-6">
         <!-- heading text -->
-        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+        <div data-aos="fade-up" data-aos-duration="1000"
           class="flex flex-col md:items-start items-center md:text-left text-center lg:pl-32 md:pl-16 pl-0">
           <span class="text-xs font-normal text-green">Oferta</span>
           <h2 class="font-medium text-5xl mt-4">Działamy <em class="font-regular">kompleksowo</em></h2>
@@ -153,7 +155,7 @@
             <p class="font-normal text-sm">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
               istniejącej
               przestrzeni.</p>
-            <p class="flex flex-row items-center gap-3 mt-12 w-44">
+            <p class="more-info flex flex-row items-center gap-3 mt-12 w-44 transition-all duration-[250ms]">
               <span class=" text-green">Dowiedz się więcej</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
@@ -170,7 +172,7 @@
               animowanego
               w
               technologii 3D.</p>
-            <p class="flex flex-row items-center gap-3 mt-12 w-44">
+            <p class="more-info flex flex-row items-center gap-2 mt-12 w-44 transition-all duration-[250ms]">
               <span class=" text-green">Dowiedz się więcej</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
@@ -186,7 +188,7 @@
             <p class="font-normal text-sm">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
               zaawansowanych
               technologii.</p>
-            <p class="flex flex-row items-center gap-3 mt-12 w-44">
+            <p class="more-info flex flex-row items-center gap-3 mt-12 w-44 transition-all duration-[250ms]">
               <span class=" text-green">Dowiedz się więcej</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
@@ -212,7 +214,7 @@
         </div>
 
         <!-- text -->
-        <div
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
           class="flex flex-col flex-wrap justify-center md:items-start items-center h-full md:w-1/2 md:py-20 lg:pl-24 p-8">
           <span class="text-xs font-normal text-grey pb-4">O firmie</span>
           <h2 class="font-medium text-5xl mt-4 text-grey pb-10 md:text-left text-center">Tworzymy<br> z <em
@@ -244,7 +246,7 @@
     </div>
   </section>
 
-  <!-- realization section -->
+  <!-- realizations section -->
   <section id="realizations" class="bg-beige">
     <div class="flex flex-col">
 
@@ -254,7 +256,7 @@
         <h2 class="font-medium text-5xl text-center pt-4">Nasze <em class="font-regular">projekty</em></h2>
       </div>
 
-      <div class="relative">
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="relative">
         <!-- gallery -->
         <div class="gallery-container relative">
           <img class="w-full" src="public/images/gallery/Photo-1.png" alt="Realizations: gallery photo">
@@ -290,9 +292,9 @@
 
   <!-- contact section -->
   <section id="contact" class="bg-grey">
-    <div class="lex flex-col py-16 max-w-5xl mx-auto px-4">
+    <div class="flex flex-col py-16 max-w-[1056px] mx-auto lg:px-0 px-4">
 
-      <div class="rounded-3xl bg-green lg:py-32 lg:px-28 py-28 px-20 
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="rounded-3xl bg-green lg:py-32 lg:px-28 py-28 px-20 
       flex lg:flex-row lg:items-end flex-col items-center justify-center gap-16">
         <!-- left -->
         <div class="flex">
@@ -303,7 +305,7 @@
 
         <!-- right -->
         <div class="flex flex-col lg:items-start justify-center items-center gap-6">
-          <span class="text-grey font-normal text-base lg:text-left text-center">Śledź nasze
+          <span class="text-grey font-normal text-base lg:text-left text-center w-[162px]">Śledź nasze
             najnowsze realizacje!</span>
           <button type="button"
             class="flex items-center justify-center gap-1 w-32 h-11 border border-grey transition-all text-green bg-grey rounded-3xl pt-2.5 pb-3 px-6 hover:text-grey hover:border-grey hover:bg-green ">
@@ -316,7 +318,7 @@
 
   <!-- footer section -->
   <section id="footer" class="bg-black">
-    <div class="flex flex-col py-20 items-stretch  max-w-5xl mx-auto px-4">
+    <div class="flex flex-col py-20 items-stretch  max-w-[1056px] mx-auto px-4">
 
       <div class="flex md:flex-row gap-4 flex-col justify-between items-center">
         <img src="public/images/logo-white.png" alt="logo GiardDesign">
@@ -368,16 +370,7 @@
   <script type="text/javascript" src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
   <script>
     AOS.init({
-
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: -1000, // offset (in px) from the original trigger point
-      once: true, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-
+      once: true
     });
   </script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

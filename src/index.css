@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
-  *,
   body {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+    padding-top: 72px;
   }
 
   .wrapper {
@@ -18,6 +18,12 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   /* nav */
@@ -43,10 +49,22 @@
     display: grid;
     grid-template-columns: 1fr;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transition: all 250ms linear;
   }
 
   .custom-card p:last-child {
     border-bottom: 1px solid #1b5b31;
+  }
+
+  .custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+  }
+
+  .custom-card:hover p.more-info {
+    transform: translateX(10px);
+    border: none;
+    gap: 15px;
   }
 
   /* gallery */
@@ -54,6 +72,17 @@
   .gallery-container {
     max-height: 600px;
     overflow: hidden;
+  }
+
+  .gallery-container > img {
+    filter: grayscale(0.3);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .gallery-container > img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05) rotate(1deg);
   }
 
   .gallery-cover {
@@ -70,9 +99,12 @@
 
   /* text */
 
+  a {
+    transition: all 250ms;
+  }
+
   .footer-menu > a:hover {
     color: rgba(255, 255, 255, 0.5);
-    transition: all 250ms;
   }
 
   .li-link:hover {
