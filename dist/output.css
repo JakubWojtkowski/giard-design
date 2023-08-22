@@ -662,12 +662,12 @@ video {
   height: 3rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-\[12\.5rem\] {
   height: 12.5rem;
+}
+
+.h-\[72px\] {
+  height: 72px;
 }
 
 .h-full {
@@ -876,6 +876,22 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/public\/images\/about-image\.jpg\'\)\] {
+  background-image: url('/public/images/about-image.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/intro-image2\.jpg\'\)\] {
+  background-image: url('/public/images/intro-image2.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-8 {
@@ -1096,21 +1112,7 @@ video {
 body {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  padding-top: 72px;
-}
-
-.image {
-  background: url("giard-design/public/images/intro-image2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
-}
-
-.about-image {
-  background: url("giard-design/public/images/about-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
+  /* padding-top: 72px; */
 }
 
 .custom-container {

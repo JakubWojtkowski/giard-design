@@ -6,21 +6,7 @@
   body {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
-    padding-top: 72px;
-  }
-
-  .image {
-    background: url("giard-design/public/images/intro-image2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-  }
-
-  .about-image {
-    background: url("giard-design/public/images/about-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
+    /* padding-top: 72px; */
   }
 
   .wrapper {
