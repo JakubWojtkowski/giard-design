@@ -9,6 +9,20 @@
     padding-top: 72px;
   }
 
+  .image {
+    background: url("/public/images/intro-image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+  }
+
+  .about-image {
+    background: url("/public/images/about-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+  }
+
   .wrapper {
     max-width: 1326px;
     margin: 0 auto;
