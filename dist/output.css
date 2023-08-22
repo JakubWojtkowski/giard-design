@@ -642,10 +642,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -1012,14 +1008,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1112,14 +1100,14 @@ body {
 }
 
 .image {
-  background: url("/public/images/intro-image2.jpg");
+  background: url("giard-design/public/images/intro-image2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
 }
 
 .about-image {
-  background: url("/public/images/about-image.jpg");
+  background: url("giard-design/public/images/about-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
