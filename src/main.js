@@ -48,3 +48,14 @@ btn.addEventListener("mouseleave", () => {
     .getElementById("expand-btn-arrow-path")
     .setAttribute("fill", "#111111");
 });
+
+// menu
+
+const navLinks = document.querySelector(".nav-links");
+const onToggleMenu = (e) => {
+  e.name = e.name === "menu" ? "close" : "menu";
+
+  e.name === "menu"
+    ? (navLinks.style.display = "none")
+    : (navLinks.style.display = "block");
+};
