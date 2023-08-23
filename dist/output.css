@@ -556,6 +556,12 @@ video {
   }
 }
 
+@media (min-width: 1160px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
@@ -642,12 +648,12 @@ video {
   margin-top: 3rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mt-8 {
@@ -666,8 +672,8 @@ video {
   display: none;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-1\/4 {
+  height: 25%;
 }
 
 .h-11 {
@@ -678,6 +684,10 @@ video {
   height: 3rem;
 }
 
+.h-3\/4 {
+  height: 75%;
+}
+
 .h-\[12\.5rem\] {
   height: 12.5rem;
 }
@@ -686,20 +696,12 @@ video {
   height: 72px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.min-h-\[1540px\] {
-  min-height: 1540px;
+.min-h-\[1000px\] {
+  min-height: 1000px;
 }
 
 .min-h-\[44vh\] {
   min-height: 44vh;
-}
-
-.min-h-\[736px\] {
-  min-height: 736px;
 }
 
 .w-28 {
@@ -752,6 +754,10 @@ video {
 
 .max-w-screen-sm {
   max-width: 480px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .-translate-x-1\/2 {
@@ -900,10 +906,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-20 {
@@ -1260,7 +1262,7 @@ a {
 }
 
 .about-text {
-  min-width: 300px;
+  min-width: 250px;
   max-width: 500px;
 }
 
@@ -1334,6 +1336,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
   .md\:left-0 {
     left: 0px;
   }
@@ -1350,12 +1356,12 @@ a {
     top: 0px;
   }
 
-  .md\:right-auto {
-    right: auto;
-  }
-
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-1\/2 {
+    height: 50%;
   }
 
   .md\:h-full {
@@ -1377,6 +1383,30 @@ a {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:max-w-\[200px\] {
+    max-width: 200px;
+  }
+
+  .md\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
+  .md\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
+  .md\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .md\:max-w-\[370px\] {
+    max-width: 370px;
+  }
+
+  .md\:max-w-\[360px\] {
+    max-width: 360px;
   }
 
   .md\:flex-row {
@@ -1431,6 +1461,10 @@ a {
 }
 
 @media (min-width: 976px) {
+  .lg\:max-w-\[450px\] {
+    max-width: 450px;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1472,6 +1506,28 @@ a {
 
   .lg\:text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1160px) {
+  .xlg\:max-w-\[450px\] {
+    max-width: 450px;
+  }
+
+  .xlg\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
+  .xlg\:max-w-\[550px\] {
+    max-width: 550px;
+  }
+
+  .xlg\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .xlg\:max-w-\[700px\] {
+    max-width: 700px;
   }
 }
 
