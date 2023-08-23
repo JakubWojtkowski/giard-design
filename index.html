@@ -32,9 +32,9 @@
 
 <body>
   <!-- nav section-->
-  <section id="nav" class="sticky bg-white h-[72px] z-20">
+  <section id="nav" class="sticky bg-white h-[72px] z-20 relative">
     <div class="max-w-7xl mx-auto my-0">
-      <nav class=" flex px-6 py-0 items-center justify-between my-6 relative">
+      <nav class=" flex px-6 items-center justify-between my-6 relative">
         <div>
           <a href="#"><img class="w-full" src="public/images/logo.svg" alt="logo GiardDesign"></a>
         </div>
@@ -63,19 +63,36 @@
             <li class="nav-li"><a href="#about" class="li-link text-sm">O firmie</a></li>
             <li class="nav-li"><a href="#realizations" class="li-link text-sm">Realizacje</a></li>
             <li class="nav-li"><a href="#contact" class="li-link text-sm">Kontakt</a></li>
-
-            <li class="nav-li relative flex gap-4">
+            <li onclick="showSearchBar(this)" class="nav-li md:block hidden">
               <a href="#" class="search-btn">
                 <i class="fas fa-search text-lg"></i>
               </a>
             </li>
           </ul>
         </div>
-        <!-- burgermenu button -->
-        <div class="md:hidden z-10">
-          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+
+        <div class="flex items-center justify-center gap-8">
+          <div onclick="showSearchBar(this)" class="flex items-end">
+            <a href="#" class="search-btn">
+              <i class="fas fa-search text-lg"></i>
+            </a>
+          </div>
+
+          <!-- burgermenu button -->
+          <div class="md:hidden z-10">
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          </div>
         </div>
       </nav>
+
+      <!-- search bar -->
+      <div
+        class="hidden search-bar absolute flex justify-center items-start py-28 top-0 bottom-0 right-0 min-w-[35vw] h-[100vh] bg-white z-30">
+        <input type="text" class="rounded-3xl border border-grey p-4 mx-4" placeholder="Szukaj" />
+        <i onclick="hideSearchBar()"
+          class="fa fa-xmark text-3xl absolute top-0 bottom-0 right-0 p-6 cursor-pointer"></i>
+      </div>
+
     </div>
   </section>
 
@@ -91,10 +108,12 @@
         <!-- left -->
         <div data-aos="fade-up" data-aos-duration="1000"
           class="md:h-1/2 h-3/4 flex flex-col md:items-start items-center justify-center gap-11 mt-40 sm:pl-6 px-3 absolute md:top-0 md:bottom-0 bottom-0">
-          <h2 class="intro-title font-medium md:text-left text-center intro-title xlg:max-w-[500px] md:max-w-[200px]">
+          <span
+            class="lg:text-7xl md:text-5xl font-medium md:text-left text-center intro-title xlg:max-w-[500px] md:max-w-[200px]">
             Nowoczesna<br> aranżacja<br>
-            Twojego ogrodu</h2>
-          <p class="xlg:max-w-[550px] md:max-w-[360px] max-w-screen-sm md:text-left text-center text-base font-normal">Marka GiardDesign to wieloletnie
+            Twojego ogrodu</span>
+          <p class="xlg:max-w-[550px] md:max-w-[360px] max-w-screen-sm md:text-left text-center text-base font-normal">
+            Marka GiardDesign to wieloletnie
             doświadczenie i wysoka
             estetyka realizacji.
             Oferujemy kompleksowy zakres

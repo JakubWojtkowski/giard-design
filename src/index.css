@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  *,
   body {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
-    /* padding-top: 72px; */
   }
 
   .image {
@@ -86,17 +86,6 @@
   .gallery-container {
     max-height: 600px;
     overflow: hidden;
-  }
-
-  .gallery-container > img {
-    filter: grayscale(0.3);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .gallery-container > img:hover {
-    filter: grayscale(0);
-    transform: scale(1.05) rotate(1deg);
   }
 
   .gallery-cover {

@@ -27,8 +27,8 @@ const hideGallery = () => {
 
   gallery.style.marginBottom = `${0}px`;
   btn.style.bottom = `${80}px`;
-  const arrow = document.getElementById("expand-btn-arrow").style.transform =
-    "rotate(180deg)";
+  const arrow = (document.getElementById("expand-btn-arrow").style.transform =
+    "rotate(180deg)");
 };
 
 // listeners
@@ -61,4 +61,16 @@ const onToggleMenu = (e) => {
   navLinks.classList.toggle("top-[0vh]");
 
   console.log(e.name);
+};
+
+// search bar
+
+const showSearchBar = (e) => {
+  document.querySelector(".search-bar").classList.toggle("hidden");
+  document.body.style.overflowY = "hidden";
+};
+
+const hideSearchBar = () => {
+  document.querySelector(".search-bar").classList.toggle("hidden");
+  document.body.style.overflowY = "";
 };
