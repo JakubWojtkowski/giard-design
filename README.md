@@ -1,6 +1,8 @@
-# GiardDesign
+# GiardDesign 🌳
 
 Live on: https://jakubwojtkowski.github.io/giard-design/
+
+![giard-design data](/public/images/giarddesign.png?raw=true "GiardDesign")
 
 
 To run the project locally, you need to download it
